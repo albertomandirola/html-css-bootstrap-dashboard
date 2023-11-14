@@ -3,3 +3,33 @@
     border: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+main{
+    height: calc(100vh - 75px);
+}
+/* HEADER */
+header{
+    height: 75px;
+    border: 2px solid red;
+}
+/* SIDEBAR */
+.sidebar{
+    height: 100%;
+    width: 75px;
+    border: 2px solid red;
+}
+
+/* MAIN-CONTENT */
+.main-content{
+    height: 100%;
+    width: calc(100% - 75px);
+    border: 2px solid blue;
+}
+/* MAIN-CONTENT-TOP */
+
+/* MAIN-CONTENT-BOTTOM */
+
+/* BACKGROUND */
+
+/* MEDIA-QUERY */
