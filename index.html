@@ -10,58 +10,213 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <div class="content">
-
-                    </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="content">
+                    <img src="./img/mobile-logo.png" alt="">
                 </div>
-                <div class="col-8">
-                    <div class="content">
-
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="content">
-
+            </div>
+            <div class="col-10">
+                <div class="content">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
             </div>
+            <div class="col-1">
+                
+            </div>
         </div>
+        
     </header>
     <main class="d-flex">
-        <div class="sidebar">
+        <div class="sidebar d-flex flex-column justify-content-between text-center ">
             <div class="sidebar-top">
-                <div class="content">
-                    <ul class="">
+                <div class="content ">
+                    <ul class="list-group">
                         <li>
                             <i class="fas fa-house"></i>
-                            <span class=" va-middle">Home</span>  
+                            <span class="d-none d-lg-block">Home</span>  
                         </li>
                         <li>
                             <i class="fas fa-chart-simple"></i>
-                            <span class=" va-middle">Stats</span> 
+                            <span class="d-none d-lg-block">Stats</span> 
                         </li>
                         <li>
                             <i class="fas fa-signal"></i>
-                            <span class=" va-middle">Signal</span>
+                            <span class="d-none d-lg-block">Signal</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="sidebar-bottom">
-
+            <div class="sidebar-bottom ">
+                <div class="content">
+                    <i class="fas fa-gear"></i>
+                    <span class="d-none d-lg-block">Option</span>
+                </div>
             </div>
         </div>
 
-
-        <div class="main-content">
+        <div class="main-content overflow-y-auto">
             <div class="main-content-top">
-
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4"></div>
+                        <div class="col-12 col-md-4"></div>
+                        <div class="col-12 col-md-4 order-sm-[1S]"></div>
+                    </div>
+                </div>
             </div>
             <div class="main-content-bottom">
-
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="content">
+                            <div class="card my-3">
+                                <h5 class="card-header">Featured</h5>
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead style="width: 100%;">
+                                          <tr>
+                                            <td scope="col" style="width: 70%;">#</td>
+                                            <td scope="col">First</td>
+                                            <td scope="col">Last</td>
+                                            <td scope="col">Handle</td>
+                                            <td scope="col">Handle</td>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td scope="row" style="width: 70%;">1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row" style="width: 70%;" >2</td>
+                                            <td>Jacob</td>
+                                            <td>tdornton</td>
+                                            <td>@fat</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row" style="width: 70%;" >3</td>
+                                            <td>Larry tde Bird</td>
+                                            <td>@twitter</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row" style="width: 70%;" >3</td>
+                                            <td>Larry the Bird</td>
+                                            <td>@twitter</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row" style="width: 70%;" >3</td>
+                                            <td>Larry the Bird</td>
+                                            <td>@twitter</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row" style="width: 70%;" >3</td>
+                                            <td>Larry the Bird</td>
+                                            <td>@twitter</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row" style="width: 70%;" >3</td>
+                                            <td>Larry the Bird</td>
+                                            <td>@twitter</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          
+                                        </tbody>
+                                      </table>
+                                </div>
+                              </div>
+                            <div class="card my-3">
+                                <h5 class="card-header">Featured</h5>
+                                <div class="card-body">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              Accordion Item #1
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              Accordion Item #2
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                              Accordion Item #3
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="content">
+                            <div class="card  my-3">
+                                <div class="card-header">
+                                  Featured
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush border rounded-2">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card">
+                                        <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">An item</li>
+                                          <li class="list-group-item">A second item</li>
+                                          <li class="list-group-item">A third item</li>
+                                        </ul>
+                                        <div class="card-body">
+                                          <a href="#" class="card-link">Card link</a>
+                                          <a href="#" class="card-link">Another link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

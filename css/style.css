@@ -13,6 +13,10 @@ header{
     height: 75px;
     border: 2px solid red;
 }
+
+header img{
+    width: 70px;
+}
 /* SIDEBAR */
 .sidebar{
     height: 100%;
@@ -33,3 +37,5 @@ header{
 /* BACKGROUND */
 
 /* MEDIA-QUERY */
+
+
