@@ -7,6 +7,7 @@
 /* COMMON */
 main{
     height: calc(100vh - 75px);
+    background-color: #F8F9FA;
 }
 /* HEADER */
 header{
@@ -22,6 +23,8 @@ header img{
     height: 100%;
     width: 75px;
     border: 2px solid red;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
 }
 
 /* MAIN-CONTENT */
@@ -32,10 +35,25 @@ header img{
 }
 /* MAIN-CONTENT-TOP */
 
+.main-content-top{
+    background-color: #1B72E8;
+}
+
+.main-content-top .badge{
+    background-color: #165BBA;
+}
 /* MAIN-CONTENT-BOTTOM */
+tr td:nth-child(n+2) , th:nth-child(n+2){
+    text-align: center;
+}
 
 /* BACKGROUND */
 
+
 /* MEDIA-QUERY */
 
-
+@media screen and (min-width:992px) {
+    .sidebar{
+        width:200px;
+    }
+}
