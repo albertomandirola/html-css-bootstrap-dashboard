@@ -282,29 +282,37 @@
     
     <div class="offcanvas offcanvas-end offcanvas-w" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">inserisci un nuovo studente</h5>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <form action="" method="GET">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <label class="form-label" for="name">nome</label>
+                        <label class="form-label" for="name">Nome</label>
                         <input class="form-control" type="text" id="name" name="name"  required>
                     </div>
                     <div class="col-12 col-md-6">
-                        <label class="form-label" for="surname">cognome</label>
+                        <label class="form-label" for="surname">Cognome</label>
                         <input class="form-control" type="text" id="surname" name="surname"  required>
                     </div>
                     <div class="col-12 col-md-6">
-                        
+                        <label class="form-label" for="email">Email</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <label class="form-label" for="password">Password</label>
                         <input class="form-control" type="password" name="password" id="password" required>
                     </div>
                     <div class="col-12 col-md-6">
-
+                        <label class="form-label" for="email">Indirizzo Email</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <label class="form-label" for="password">Password</label>
@@ -334,20 +342,19 @@
                         <input class="form-control" type="text" id="cap" name="cap"  required>
                     </div>
                     <div class="col-12">
-                        <div class="input-group mb-3">
-                            <div>
-                                <label class="form-label" for="inputGroupFile03">Foto </label>
-                            </div>
-                            <input type="file" class="form-control rounded-2" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Foto</label>
+                            <input class="form-control" type="file" id="formFile">
                         </div>
+                          
                     </div>
                     <div class="col-12 d-flex align-items-center">
                         <input class="form-check-input" type="checkbox" id="terms" required>
-                        <label class="form-check-label" for="terms">Seleziona per proseguire</label>
+                        <label class="form-check-label px-2" for="terms">Seleziona per proseguire</label>
                     </div>
                     <div class="col-12">
-                        <input type="submit">
-                        
+                        <button class="btn btn-primary my-3" type="submit">Salva</button>
+                        <input class="btn btn-warning" type="reset" value="Svuota">
                     </div>
                 </div>
             </form>
