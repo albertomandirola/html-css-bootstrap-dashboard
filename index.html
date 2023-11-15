@@ -12,56 +12,94 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- HEADER -->
     <header>
-        <div class="row">
-            <div class="col-2">
-                <div class="content">
-                    <img src="./img/mobile-logo.png" alt="">
-                </div>
-            </div>
-            <div class="col-10">
-                <div class="content">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <div class="content">
+                        <img src="./img/mobile-logo.png" class="d-lg-none logo-mobile" alt="">
+                        <img src="./img/logo.svg" class="d-none d-lg-block logo"  alt="">
                     </div>
                 </div>
-            </div>
-            <div class="col-1">
-                
-            </div>
+                <div class="col">
+                    <div class="content">
+                        <div class="input-group my-1">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto ">
+                    <div class="contet">
+                        <ul class="list-group list-group-horizontal align-items-center">
+                            <li class="list-group px-2 d-none d-lg-inline-block"><i class="fas fa-list"></i></li>
+                            <li class="list-group px-2 d-none d-lg-inline-block"><i class="fas fa-circle-question"></i></li>
+                            <li class="list-group px-2 d-none d-lg-inline-block"><i class="fas fa-ellipsis-vertical"></i></li>
+                            <li class="list-group px-2 ">                        
+                                <div class="dropdown">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-bell gold"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
         </div>
         
     </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
     <main class="d-flex">
+        <!-- SIDEBAR -->
         <div class="sidebar d-flex flex-column justify-content-between text-center text-white">
             <div class="sidebar-top">
                 <div class="content ">
                     <ul class="list-group">
                         <li class="mt-3">
-                            <i class="fas fa-house"></i>
-                            <span class="d-none d-lg-inline-block my-1 px-2">Home</span>  
+                            <button type="button" class="btn btn-outline-light border-0 rounded-0 my-1">
+                                <i class="fas fa-house"></i>
+                                <span class="d-none d-lg-inline-block px-2">Home</span> 
+                            </button>
+
                         </li>
                         <li>
-                            <i class="fas fa-chart-simple"></i>
-                            <span class="d-none d-lg-inline-block my-1 px-3">Stats</span> 
+                            <button type="button" class="btn btn-outline-light border-0 rounded-0 my-1">
+                                <i class="fas fa-chart-simple"></i>
+                                <span class="d-none d-lg-inline-block my-1 px-3">Stats</span> 
+                            </button>
                         </li>
                         <li>
-                            <i class="fas fa-signal"></i>
-                            <span class="d-none d-lg-inline-block my-1 px-2">Signal</span>
+                            <button type="button" class="btn btn-outline-light border-0 rounded-0 my-1">
+                                <i class="fas fa-signal"></i>
+                                <span class="d-none d-lg-inline-block my-1 px-2">Signal</span>
+                            </button>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="sidebar-bottom ">
                 <div class="content mb-3">
-                    <i class="fas fa-gear"></i>
-                    <span class="d-none d-lg-inline-block px-2">Option</span>
+                    <button type="button" class="btn btn-outline-light border-0 rounded-0 my-1">
+                        <i class="fas fa-gear"></i>
+                        <span class="d-none d-lg-inline-block px-2">Option</span>
+                    </button>
+                    
                 </div>
             </div>
         </div>
+        <!-- END SIDEBAR -->
 
+        <!-- MAIN-CONTENT -->
         <div class="main-content overflow-y-auto">
+            <!-- TOP CONTENT -->
             <div class="main-content-top text-white">
                 <div class="container-fluid">
                     <div class="row align-items-center">
@@ -85,28 +123,30 @@
                                 <h2>152</h2>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3 order-sm-1">
+                        <div class="col-12 col-md-3 order-first order-md-last">
                             <div class="content">
                                 <span>Nuovo studente</span>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-plus border p-1 rounded-2"></i></button>
-
-                                
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-plus border p-1 rounded-2"></i></button>                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="main-content-bottom">
+            <!-- END TOP-CONTENT -->
+
+            <!-- BOTTOM-CONTENT -->
+            <div class="main-content-bottom mx-3">
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <div class="content">
+                            <!-- FIRST CARD -->
                             <div class="card my-3">
-                                <h5 class="card-header">Featured</h5>
+                                <h5 class="card-header">Prossime classi</h5>
                                 <div class="card-body">
                                     <table class="table table-hover">
                                         <thead style="width: 100%;">
                                           <tr>
-                                            <th scope="col" class="w-50">Nome</th>
+                                            <th scope="col" class="width">Nome</th>
                                             <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
                                             <th scope="col" class="d-none d-md-table-cell">ROI</th>
                                             <th scope="col">Stato</th>
@@ -189,9 +229,12 @@
                                         </tbody>
                                       </table>
                                 </div>
-                              </div>
+                            </div>
+                            <!-- END FIRST-CARD -->
+
+                            <!-- SECOND CARD -->
                             <div class="card my-3">
-                                <h5 class="card-header">Featured</h5>
+                                <h5 class="card-header">F.A.Q</h5>
                                 <div class="card-body">
                                     <div class="accordion accordion-flush" id="accordionFlushExample">
                                         <div class="accordion-item">
@@ -228,9 +271,11 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END SECOND-CARD -->
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="content">
+                        <!-- THIRD-CARD -->
                             <div class="card  my-3">
                                 <h5 class="card-header">
                                   Todo
@@ -252,6 +297,9 @@
                                       </ul>
                                 </div>
                             </div>
+                            <!--END THIRD-CARD -->
+
+                            <!-- FOURTH-CARD -->
                             <div class="card">
                                 <div class="card-body">
                                     <div class="card">
@@ -271,15 +319,17 @@
                                         </div>
                                     </div>
                                 </div>
-                              </div>
-                            
+                            </div>
+                            <!--END FOURTH-CARD -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    
+    <!-- END MAIN -->
+
+    <!-- OFFCANVAS -->
     <div class="offcanvas offcanvas-end offcanvas-w" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
